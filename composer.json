@@ -14,7 +14,7 @@
         "fakerphp/faker": "^1.23",
         "guzzlehttp/guzzle": "^7.2",
         "inertiajs/inertia-laravel": "^1.0",
-        "laravel/framework": "^11.1",
+        "laravel/framework": "^11.22.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "league/glide-symfony": "^2.0"
@@ -24,6 +24,9 @@
         "laravel/sail": "^1.26",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.0",
+        "pestphp/pest": "^3.7",
+        "pestphp/pest-plugin-faker": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0",
         "phpunit/phpunit": "^11.0",
         "roave/security-advisories": "dev-latest",
         "spatie/laravel-ignition": "^2.4"
@@ -66,7 +69,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
